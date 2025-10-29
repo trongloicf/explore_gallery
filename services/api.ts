@@ -1,7 +1,7 @@
 import { GalleryItemCreate } from "@/interfaces/gallery";
 import axios from "axios";
 
-const API = "http://localhost:3000/api/gallerys"
+const API = "/api/gallerys"
 
 export const getAll = () => axios.get(`${API}`)
 export const getGalleryById = (id: number) => axios.get(`${API}/${id}`)
